@@ -1,0 +1,10 @@
+import importlib.util, os
+spec = importlib.util.spec_from_file_location('appmod', os.path.join(os.getcwd(),'backend','app.py'))
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+print('MODEL_PATH =', mod.MODEL_PATH)
+print('exists?', os.path.exists(mod.MODEL_PATH))
+print('VECT_PATH =', mod.VECT_PATH)
+print('exists?', os.path.exists(mod.VECT_PATH))
+print('model is', 'loaded' if mod.model is not None else 'None')
+print('vectorizer is', 'loaded' if mod.vectorizer is not None else 'None')

@@ -1,0 +1,13 @@
+START
+reading csv at: C:\Users\Yuvaraja\OneDrive\spam mail\backend\spam.csv
+read rows:8
+columns:['v1', 'v2', 'unused1', 'unused2', 'unused3']
+labels unique before mapping:<StringArray>
+['ham', 'spam']
+Length: 2, dtype: str
+labels after mapping:[0 1]
+split sizes: train=6 test=2
+X_train_vec shape:(6, 15)
+writing to:C:\Users\Yuvaraja\OneDrive\spam mail\backend\spam_model.pkl and C:\Users\Yuvaraja\OneDrive\spam mail\backend\vectorizer.pkl
+written files exist:True True
+DONE
